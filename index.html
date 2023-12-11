@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pagination With JS</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="data-container">
+ <h1>Sports </h1>
+
+ <div class="card-container">
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Cricket
+   </h3>
+  </div>
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Football
+   </h3>
+  </div>
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Rugby
+   </h3>
+  </div>
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Basketball
+   </h3>
+  </div>
+
+
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Soccer
+   </h3>
+  </div>
+
+
+
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Swimming
+   </h3>
+  </div>
+
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Esports
+   </h3>
+  </div>
+
+
+
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    UFC
+   </h3>
+  </div>
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Boxing
+   </h3>
+  </div>
+
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Boxing
+   </h3>
+  </div>
+
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Boxing
+   </h3>
+  </div>
+
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Boxing
+   </h3>
+  </div>
+
+
+
+  <div class="card"> 
+   <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcf-images.eu-west-1.prod.boltdns.net%2Fv1%2Fstatic%2F3588749423001%2F5b625eaf-43c4-476b-b9da-93cb0eff1b6b%2Feab2d76a-7d9f-4d2c-8cb6-f7f84b60919c%2F1280x720%2Fmatch%2Fimage.jpg&tbnid=eGFuYBKWBOMBdM&vet=12ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.bcci.tv%2F&docid=_QMjurw3dYkWBM&w=1080&h=720&q=cricket&ved=2ahUKEwiTvcDIh4eDAxXcfWwGHQgHCxAQMygBegQIARB1" alt="cricket">
+   <h3>
+    Boxing
+   </h3>
+  </div>
+  
+   
+ </div>
+</div>
+
+
+<div class="pagination" id="pagination">
+ <a href="#" id="prev"> &lt </a>
+ <a href="#" class="page-link" data-page="1">1</a> 
+ <a href="#" class="page-link" data-page="2">2</a> 
+ <a href="#" class="page-link" data-page="3">3</a>  
+ <a href="#" class="page-link" data-page="4">4</a>  
+
+ <a href="#" id="next"> &gt </a>
+ <p id="page-numbers"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
